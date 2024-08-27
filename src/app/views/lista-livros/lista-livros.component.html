@@ -15,7 +15,7 @@
   </div>
   <div
     class="resultados"
-    *ngIf="livrosEncontrados$ | async ">
+    *ngIf="livrosEncontrados$ | async "> <!--O pipe async se inscreve em um Observable e retorna o último valor que emitiu. Quando um novo valor é emitido, o pipe async marca o componente a ser verificado quanto a alterações.-->
       {{ livrosResultado.totalItems}} resultados encontrados
   </div>
   <div
