@@ -4,6 +4,7 @@ import { Item, Livro } from 'src/app/models/interfaces';
 import { LivroService } from 'src/app/service/livro.service';
 import { ImageLinks } from './../../models/interfaces';
 import { LivroVolumeInfo } from 'src/app/models/livroVolumeInfo';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-lista-livros',
