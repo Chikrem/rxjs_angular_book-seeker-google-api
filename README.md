@@ -30,4 +30,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 O projeto pode ser visualizado e testado em:
 
-- [Serenatto - Vercel](https://rxjs-angular-book-seeker-google-api-frb6.vercel.app/lista-livros)
+- [Buscante - Vercel](https://rxjs-angular-book-seeker-google-api-frb6.vercel.app/lista-livros)
