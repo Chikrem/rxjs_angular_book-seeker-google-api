@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-rodape',
+  selector: 'app-sobre',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './rodape.component.html',
-  styleUrl: './rodape.component.css'
+  templateUrl: './sobre.component.html',
+  styleUrl: './sobre.component.css'
 })
-export class RodapeComponent {
+export class SobreComponent {
 
 }

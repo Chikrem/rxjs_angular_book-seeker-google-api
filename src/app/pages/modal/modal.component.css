@@ -60,6 +60,7 @@
   color: #FFFFFF;
   border: none;
   cursor: pointer;
+  margin-right: 8px;
 }
 
 .info-card {
@@ -70,6 +71,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.botoes {
+  display: flex;
 }
 
 .imagem {

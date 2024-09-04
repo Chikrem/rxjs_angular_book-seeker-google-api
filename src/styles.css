@@ -1,3 +1,4 @@
+/* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 
@@ -35,3 +36,7 @@ button:hover {
   border: 2px solid #050C42;
 }
 
+
+body {
+  overflow-x: hidden;
+}

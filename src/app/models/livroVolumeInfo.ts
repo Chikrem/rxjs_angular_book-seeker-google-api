@@ -9,7 +9,7 @@ export class LivroVolumeInfo {
   previewLink?: string;
   thumbnail?: ImageLinks;
 
-  constructor(item) {
+  constructor(item: any) {
     this.title = item.volumeInfo?.title,
     this.authors = item.volumeInfo?.authors,
     this.publisher = item.volumeInfo?.publisher,

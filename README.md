@@ -1,33 +1,41 @@
+![Buscante](thumbnail.png)
+
 # Buscante
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
+Aplicação que permite pesquisar e descobrir livros utilizando a API do Google Books. 
 
-## Development server
+## 🔨 Funcionalidades do projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Pesquisa de Livros:
 
-## Code scaffolding
+As pessoas podem inserir palavras-chave na barra de pesquisa para buscar livros de forma dinâmica.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Detalhes do Livro:
 
-## Build
+Ao clicar em um livro específico pode-se obter mais detalhes, como título, sinopse, autoria e outras informações fornecidas pela API do Google Books.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Link para ler prévia do livro:
 
-## Running unit tests
+Link com opção de ler uma prévia do livro.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## ✔️ Técnicas e tecnologias utilizadas
 
-## Running end-to-end tests
+As técnicas e tecnologias utilizadas foram:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- `Angular`
+- `Google Books API`
+- `RxJs`
 
-## Further help
+## 📁 Acesso ao projeto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Você pode [acessar o código fonte do projeto inicial](https://github.com/nayannelbatista/3491-angular-a11y) ou [baixá-lo](https://github.com/nayannelbatista/3491-angular-a11y/archive/refs/heads/projeto-base.zip).
 
-## Teste
+## 🛠️ Abrir e rodar o projeto
 
-O projeto pode ser visualizado e testado em:
+Para abrir e rodar o projeto, execute *npm i* para instalar as dependências e *ng serve* para iniciar o projeto.
 
-- [Buscante - Vercel](https://rxjs-angular-book-seeker-google-api-frb6.vercel.app/lista-livros)
+Depois, acesse [http://localhost:4200/](url) no seu navegador. 
+
+## 📚 Mais informações do curso
+
+O curso visa implementar estratégias de acessibilidade para tornar o Buscante uma aplicação mais inclusiva e acessível.

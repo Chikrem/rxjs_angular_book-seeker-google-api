@@ -1,9 +1,17 @@
 <header>
-  <button (click)="irParaTelaInicial()">
-    <img src="assets/imagens/logo.png" alt="Logo da aplicação Buscante">
-  </button>
-  <div>
-    <a href="https://github.com/nayannelbatista" target="_blank">Sobre</a>
-    <a href="https://www.linkedin.com/in/nayannebatista/" target="_blank">Contato</a>
-  </div>
+  <a class="logo"
+    routerLink="/lista-livros">
+    <img
+      src="assets/imagens/logo.png"
+      alt="Logo da aplicação Buscante">
+  </a>
+  <nav>
+    <a
+      routerLink="/sobre">Sobre
+    </a>
+    <a
+      routerLink="/contato">Contato
+    </a>
+  </nav>
 </header>
+

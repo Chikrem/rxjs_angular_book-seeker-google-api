@@ -1,18 +1,22 @@
-<div class="card">
-  <img
-    src="{{ livro.thumbnail != undefined ? livro.thumbnail : 'assets/imagens/capa-indisponivel.png'}}"
-    alt="Capa do livro">
-  <div class="info-card">
-    <p class="titulo">{{ livro.title | slice:0:30}}</p>
-    <p class="informacoes">Autoria:</p>
-    <p class="resultado">{{ livro.authors | autoria | slice:0:20}}</p>
-    <p class="informacoes">Data de publicação:</p>
-    <p class="resultado">{{ livro.publishedDate | date:'dd/MM/yyyy' }}</p>  <!-- https://v17.angular.io/guide/pipes-overview#understanding-pipes -->
-    <p class="informacoes">Editora:</p>
-    <p class="resultado">{{ livro.publisher | slice:0:20}}</p>
+<article class="card-livro">
+  <img src="{{ livro.thumbnail || 'assets/imagens/capa-indisponivel.png' }}" alt="Capa do livro">
+  <section class="info-card">
+    <h2>{{ livro.title | slice:0:30 }}</h2>
+    <dl>
+      <dt class="informacoes">Autoria:</dt>
+      <dd class="resultado">{{ livro.authors ? (livro.authors | autoria | slice:0:20) : ''  }}</dd>
+      <dt class="informacoes">Data de publicação:</dt>
+      <dd class="resultado">{{ livro.publishedDate | date:'dd/MM/yyyy' }}</dd>
+      <dt class="informacoes">Editora:</dt>
+      <dd class="resultado">{{ livro.publisher | slice:0:20 }}</dd>
+    </dl>
     <button (click)="onModalChange(true)">Mais detalhes</button>
-  </div>
-</div>
-<div *ngIf="modalAberto">
-  <app-modal-livro [livro]="livro" (mudouModal)="onModalChange($event)"></app-modal-livro>
-</div>
+  </section>
+</article>
+@if (modalAberto) {
+  <ng-container>
+    <app-modal [livro]="livro" (mudouModal)="onModalChange($event)"></app-modal>
+  </ng-container>
+}
+
+
