@@ -3,6 +3,7 @@
     routerLink="/lista-livros"
     routerLinkActive="active-page"
     ariaCurrentWhenActive="page"
+    aria-label="Página inicial"
     >
     <img
       src="assets/imagens/logo.png"
@@ -11,11 +12,18 @@
   <nav>
     <a
       routerLink="/sobre"
-      routerLinkActive="active-page">Sobre
+      routerLinkActive="active-page"
+      aria-label="Mais informações sobre o Buscante"
+      ariaCurrentWhenActive="page"
+      >Sobre
+
     </a>
     <a
       routerLink="/contato"
-      routerLinkActive="active-page">Contato
+      routerLinkActive="active-page"
+      aria-label="Entre em contato"
+      ariaCurrentWhenActive="page"
+      >Contato
     </a>
   </nav>
 </header>
