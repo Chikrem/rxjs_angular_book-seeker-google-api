@@ -22,7 +22,8 @@ const PAUSA = 300;
     ReactiveFormsModule
   ],
   templateUrl: './lista-livros.component.html',
-  styleUrl: './lista-livros.component.css'
+  styleUrl: './lista-livros.component.css',
+
 })
 export class ListaLivrosComponent {
   campoBusca = new FormControl();

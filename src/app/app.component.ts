@@ -9,6 +9,7 @@ import { LivroService } from './service/livro.service';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -21,10 +22,11 @@ import { ContatoComponent } from './pages/contato/contato.component';
     CabecalhoComponent,
     RodapeComponent,
     SobreComponent,
-    ContatoComponent],
+    ContatoComponent,
+  ],
   providers: [LivroService],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'a11y-buscante';
