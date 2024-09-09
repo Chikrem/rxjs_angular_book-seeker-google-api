@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input, Renderer2 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { Livro } from '../../models/interfaces';
@@ -44,9 +44,28 @@ export class LivroComponent {
   @Input() livro!: Livro;
   modalAberto: boolean = false;
 
-  constructor() {}
+  constructor(
+    private renderer: Renderer2,
+    private element: ElementRef
+) {}
 
-  onModalChange(evento: boolean) {
-    this.modalAberto = evento;
-  }
+// Entre seus métodos, destacam-se:
+
+// setStyle: Utilizado para definir estilos em um elemento DOM, proporcionando uma maneira segura de modificar a apresentação visual.
+
+// createElement: Essencial para criar dinamicamente elementos DOM, oferecendo flexibilidade na construção de interfaces interativas.
+
+// createText: Permite a criação de nós de texto, contribuindo para a manipulação de conteúdo textual em tempo de execução.
+
+// appendChild e removeChild: Essenciais para adicionar e remover elementos filhos, controlando a estrutura do DOM de maneira segura.
+
+// setAttribute: Utilizado para definir atributos em elementos, possibilitando a configuração dinâmica de propriedades.
+
+// addClass e removeClass: Contribuem para a adição e remoção de classes, permitindo a manipulação de estilos de forma modular.
+
+onModalChange(evento: boolean) {
+  this.modalAberto = evento;
+  this.renderer.setStyle(
+      this.element.nativeElement.ownerDocument.body, 'overflow', 'hidden')
+}
 }
